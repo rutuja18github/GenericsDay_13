@@ -16,6 +16,9 @@ public class App {
 		CalculateMaximum maxObj = new CalculateMaximum();
 		int max = maxObj.maxNumber(11, 10, 66);
 		maxObj.maxAtSecondPosition(79, max);
+		
+		String maximum=maxObj.maxOfString("Apple", "Peach", "Banana");
+		logger.info("largest string :"+maximum);
 	}
 	
 }
