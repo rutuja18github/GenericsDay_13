@@ -18,4 +18,14 @@ public class CalculateMaximum {
 		return max;
 
 	}
+    //check that maximum(largest) number is present at second position
+	public void maxAtSecondPosition(int num, int max) {
+		if (num == max) {
+			logger.info("Calculated maximum is at 2nd position");
+		} else {
+			logger.info("Calculated maximum is not at 2nd position");
+
+		}
+	}
+
 }
