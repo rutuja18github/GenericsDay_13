@@ -19,6 +19,9 @@ public class App {
 		
 		String maximum=maxObj.maxOfString("Apple", "Peach", "zebra");
 		maxObj.maxAtSecondPosition("Peach", maximum);
+		
+		max=maxObj.maxOfGerneric(55,66,88);
+		logger.info("Maximum for Generics type :"+max);
 	}
 	
 }

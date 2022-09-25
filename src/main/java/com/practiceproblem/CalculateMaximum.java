@@ -15,7 +15,7 @@ public class CalculateMaximum {
 		if (Integer.valueOf(num3).compareTo(max) > 0) {
 			max = num3; // num3 is the largest
 		}
-		return max;
+		return max;//return largest object
 
 	}
 
@@ -37,7 +37,7 @@ public class CalculateMaximum {
 				max = string;
 			}
 		} 
-		return max;
+		return max;//return largest object
 	}
 	public void maxAtSecondPosition(String str, String max) {
 		if (str.equals(max)) {
@@ -46,5 +46,15 @@ public class CalculateMaximum {
 			logger.info("Calculated maximum string is not at 2nd position");
 
 		}
+	}
+	// find the largest of three Comparable generic objects
+	public  <T extends Comparable<T>> T maxOfGerneric(T ...variables) {
+	    T max = variables[0];//
+	    for (T variable : variables) {
+	        if (variable.compareTo(max) > 0) {
+	            max = variable;
+	        }
+	    }
+	    return max;//return largest object
 	}
 }
