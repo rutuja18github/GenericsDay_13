@@ -22,9 +22,9 @@ public class CalculateMaximum {
 	// check that maximum(largest) number is present at second position
 	public void maxAtSecondPosition(int num, int max) {
 		if (num == max) {
-			logger.info("Calculated maximum is at 2nd position");
+			logger.info("Calculated maximum number is at 2nd position");
 		} else {
-			logger.info("Calculated maximum is not at 2nd position");
+			logger.info("Calculated maximum number is not at 2nd position");
 
 		}
 	}
@@ -36,7 +36,15 @@ public class CalculateMaximum {
 			if (string.compareTo(max) > 0) {
 				max = string;
 			}
-		} // compares each element and returns a maximum in the end
+		} 
 		return max;
+	}
+	public void maxAtSecondPosition(String str, String max) {
+		if (str.equals(max)) {
+			logger.info("Calculated maximum String is at 2nd position");
+		} else {
+			logger.info("Calculated maximum string is not at 2nd position");
+
+		}
 	}
 }
