@@ -16,6 +16,6 @@ public class App
     	logger.info( "Find Maximum Problem Using Generics" );
     	CalculateMaximum maxObj=new CalculateMaximum();
     	int max=maxObj.maxNumber(65,45,85);
-    	System.out.println("max"+max);
+    	logger.info("Largest Number"+max);
     }
 }
