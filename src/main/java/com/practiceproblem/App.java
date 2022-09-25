@@ -14,14 +14,13 @@ public class App {
 	public static void main(String[] args) {
 		logger.info("Find Maximum Problem Using Generics");
 		CalculateMaximum maxObj = new CalculateMaximum();
-		int max = maxObj.maxNumber(11, 10, 66);
+		int max = maxObj.maxNumber(11, 79, 66);
 		maxObj.maxAtSecondPosition(79, max);
 		
 		String maximum=maxObj.maxOfString("Apple", "Peach", "zebra");
 		maxObj.maxAtSecondPosition("Peach", maximum);
 		
-		max=maxObj.maxOfGerneric(55,66,88);
-		logger.info("Maximum for Generics type :"+max);
+		maxObj.maxAtSecond(66,maxObj.maxOfGerneric(55,66,11));
 	}
 	
 }

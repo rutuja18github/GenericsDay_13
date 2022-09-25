@@ -39,6 +39,8 @@ public class CalculateMaximum {
 		} 
 		return max;//return largest object
 	}
+	
+	// check that maximum(largest) String is present at second position
 	public void maxAtSecondPosition(String str, String max) {
 		if (str.equals(max)) {
 			logger.info("Calculated maximum String is at 2nd position");
@@ -57,4 +59,13 @@ public class CalculateMaximum {
 	    }
 	    return max;//return largest object
 	}
+	
+	// check that maximum(largest) element is present at second position
+	public static <T> void maxAtSecond(T element,T max){
+        if(element.equals(max)){
+        	logger.info("Calculated maximum is at 2nd position");
+        }else{
+        	logger.info("Calculated maximum is not at 2nd position");
+        }
+     }
 }
